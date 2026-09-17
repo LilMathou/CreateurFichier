@@ -7,6 +7,12 @@ Permet de générer plusieurs fichiers du même nom dans un dossier choisi.
 - PyCharm ou Visual Studio Code
 - UV
 
+## Créer un exécutable
+Voici la commande pour créer un exécutable.
+```bash
+pyinstaller --onefile --windowed --name CreateurFichier main.py 
+```
+
 ## Dépendances
 - PySide6
 - PyInstaller
