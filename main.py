@@ -22,7 +22,6 @@ class Formulaire(QWidget):
         self.nombre_fichier.setRange(1, 50)
         self.bouton_creation_fichier = QPushButton("Valider", self)
         self.texte_erreur = QLabel()
-        self.texte_erreur.text()
 
         layout.addRow(self.bouton_selection_dossier)
         layout.addRow("Nom", self.nom_fichier)
