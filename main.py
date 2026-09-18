@@ -1,6 +1,7 @@
 from PySide6.QtWidgets import QApplication, QFormLayout, QLineEdit, QSpinBox, QWidget, QPushButton, QFileDialog, \
     QComboBox, QLabel
 import sys
+from qt_material import apply_stylesheet
 
 class Formulaire(QWidget):
     def __init__(self):
@@ -52,5 +53,6 @@ class Formulaire(QWidget):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = Formulaire()
+    apply_stylesheet(app, theme='dark_cyan.xml')
     window.show()
     sys.exit(app.exec())
